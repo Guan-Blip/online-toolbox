@@ -4,7 +4,7 @@
 
 > **100% 纯本地运行 · 数据绝不上云 · 极简开箱即用**
 
-![Version](https://img.shields.io/badge/Version-v3.3-1677FF?style=flat-square)
+![Version](https://img.shields.io/badge/Version-v1.0-1677FF?style=flat-square)
 ![PHP](https://img.shields.io/badge/PHP-%E2%89%A57.4-777BB4?style=flat-square&logo=php&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/Composer%20%E4%BE%9D%E8%B5%96-0-success?style=flat-square)
@@ -14,6 +14,8 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-FF69B4?style=flat-square)
 
 **11 个开发者高频工具 · 一个支持 PHP 的空间即可起飞 · 上传即用**
+
+**[🇨🇳 中文 (当前) | 🇬🇧 English (README.en.md)](./README.en.md)**
 
 </div>
 
