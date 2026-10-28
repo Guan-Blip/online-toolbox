@@ -224,6 +224,7 @@ online-toolbox/
 ---
 
 <div align="center">
+ 说明：本项目的部分代码与文档由 AI 辅助生成。
 
 **如果这个项目对你有帮助，请给它一个 ⭐ Star！**
 
