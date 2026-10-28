@@ -34,7 +34,8 @@ We firmly believe: **tools should stay tools.**
 - 🕵️ **Privacy first**: every conversion and computation happens locally. Your data never touches the cloud, never leaves the server, never leaves a trace
 - 🎨 **Good looks built in**: 30+ polished themes — dark, light, and a rainbow of color schemes, one click away
 
-> 📸 **[Screenshots]**
+> 📸 **[<img width="1884" height="903" alt="image" src="https://github.com/user-attachments/assets/a4e32d11-9b72-4d51-996a-ba25b866c616" />
+]**
 
 ---
 
