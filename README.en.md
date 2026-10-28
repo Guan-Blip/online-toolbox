@@ -217,6 +217,15 @@ Every contribution is welcome — a bug fix, a new language, or a brand-new them
 
 ---
 
+## 💖 Credits
+
+This project uses the following open-source libraries for syntax highlighting:
+- [highlight.js](https://highlightjs.org/) (Licensed under BSD-3-Clause)
+
+Parts of the code and documentation in this project were generated with the assistance of AI.
+
+---
+
 ## 📄 License
 
 Released under the [MIT License](./LICENSE).
@@ -226,7 +235,6 @@ You are free to use, copy, modify, merge, publish, distribute, sublicense, and/o
 ---
 
 <div align="center">
-Parts of the code and documentation in this project were generated with the assistance of AI.
 
 **If this project helps you, please give it a ⭐ Star!**
 
