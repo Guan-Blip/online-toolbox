@@ -217,6 +217,15 @@ online-toolbox/
 
 ---
 
+## 💖 致谢
+
+本项目的语法高亮功能基于以下优秀的开源库：
+- [highlight.js](https://highlightjs.org/) (Licensed under BSD-3-Clause)
+
+本项目的部分代码与文档在开发过程中使用了 AI 辅助生成。
+
+---
+
 ## 📄 开源协议
 
 本项目基于 [MIT License](./LICENSE) 开源发布。
@@ -226,7 +235,6 @@ online-toolbox/
 ---
 
 <div align="center">
- 说明：本项目的部分代码与文档由 AI 辅助生成。
 
 **如果这个项目对你有帮助，请给它一个 ⭐ Star！**
 
