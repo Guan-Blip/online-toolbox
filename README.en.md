@@ -1,12 +1,12 @@
 <div align="center">
 
-[简体中文](./README.md) | English
+**[🇨🇳 简体中文](./README.md) | 🇬🇧 English (Current)**
 
 # 🧰 Online Toolbox · 在线工具箱
 
 > **100% Local Execution · Data Never Touches the Cloud · Zero-Config, Upload & Go**
 
-![Version](https://img.shields.io/badge/Version-v3.3-1677FF?style=flat-square)
+![Version](https://img.shields.io/badge/Version-v1.0-1677FF?style=flat-square)
 ![PHP](https://img.shields.io/badge/PHP-%E2%89%A57.4-777BB4?style=flat-square&logo=php&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-brightgreen?style=flat-square)
 ![Dependencies](https://img.shields.io/badge/Dependencies-0-success?style=flat-square)
