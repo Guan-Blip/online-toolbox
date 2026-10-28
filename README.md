@@ -15,7 +15,7 @@
 
 **11 个开发者高频工具 · 一个支持 PHP 的空间即可起飞 · 上传即用**
 
-**[🇨🇳 中文 (当前) | 🇬🇧 English (README.en.md)](./README.en.md)**
+**[🇨🇳 中文 (当前) | 🇬🇧 English](./README.en.md)**
 
 </div>
 
