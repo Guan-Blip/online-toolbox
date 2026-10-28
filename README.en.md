@@ -226,6 +226,7 @@ You are free to use, copy, modify, merge, publish, distribute, sublicense, and/o
 ---
 
 <div align="center">
+Parts of the code and documentation in this project were generated with the assistance of AI.
 
 **If this project helps you, please give it a ⭐ Star!**
 
