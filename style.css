@@ -1,0 +1,586 @@
+/* ============================================================
+   在线工具箱 · 样式表
+   33 个主题，切换靠 body 上的 theme-xxx 类
+   每个主题只改变量，下面的组件样式通吃
+   ============================================================ */
+
+/* ============================================================
+   主题变量
+   ============================================================ */
+
+.theme-default {
+    --bg-body: #0a0c15; --bg-card: rgba(255, 255, 255, 0.02); --border-color: rgba(255, 255, 255, 0.05);
+    --primary: #a78bfa; --primary2: #ec4899; --text-primary: #ffffff; --text-secondary: rgba(255, 255, 255, 0.3); --shadow: rgba(0, 0, 0, 0.4);
+}
+.theme-violet {
+    --bg-body: #0f0a1a; --bg-card: rgba(180, 130, 255, 0.06); --border-color: rgba(180, 130, 255, 0.12);
+    --primary: #b38bff; --primary2: #d4a0ff; --text-primary: #f0ebff; --text-secondary: rgba(200, 180, 255, 0.4); --shadow: rgba(180, 130, 255, 0.15);
+}
+.theme-white {
+    --bg-body: #f0f0f2; --bg-card: #ffffff; --border-color: rgba(0, 0, 0, 0.08);
+    --primary: #5a4bd1; --primary2: #8b7fe6; --text-primary: #1a1a2e; --text-secondary: rgba(0, 0, 0, 0.45); --shadow: rgba(0, 0, 0, 0.06);
+}
+.theme-darkpurple {
+    --bg-body: #0a0618; --bg-card: rgba(80, 40, 140, 0.10); --border-color: rgba(120, 80, 200, 0.08);
+    --primary: #9b6bff; --primary2: #cc88ff; --text-primary: #f0e6ff; --text-secondary: rgba(180, 150, 255, 0.35); --shadow: rgba(100, 50, 200, 0.12);
+}
+.theme-pink {
+    --bg-body: #1a0f14; --bg-card: rgba(255, 150, 180, 0.06); --border-color: rgba(255, 150, 180, 0.10);
+    --primary: #ff8aae; --primary2: #ffb3c6; --text-primary: #ffe6ec; --text-secondary: rgba(255, 180, 200, 0.35); --shadow: rgba(255, 100, 150, 0.10);
+}
+.theme-ocean {
+    --bg-body: #0a0f1f; --bg-card: rgba(50, 120, 255, 0.06); --border-color: rgba(50, 120, 255, 0.10);
+    --primary: #4a8aff; --primary2: #7ab0ff; --text-primary: #e6f0ff; --text-secondary: rgba(150, 200, 255, 0.35); --shadow: rgba(50, 100, 255, 0.10);
+}
+.theme-forest {
+    --bg-body: #0a140f; --bg-card: rgba(50, 220, 120, 0.05); --border-color: rgba(50, 220, 120, 0.08);
+    --primary: #4ade80; --primary2: #86efac; --text-primary: #e6f5ea; --text-secondary: rgba(150, 230, 180, 0.35); --shadow: rgba(50, 200, 100, 0.08);
+}
+.theme-orange {
+    --bg-body: #1a0f08; --bg-card: rgba(255, 150, 50, 0.06); --border-color: rgba(255, 150, 50, 0.10);
+    --primary: #ff9944; --primary2: #ffbb77; --text-primary: #fff0e0; --text-secondary: rgba(255, 200, 150, 0.35); --shadow: rgba(255, 150, 50, 0.10);
+}
+.theme-cyan {
+    --bg-body: #080f12; --bg-card: rgba(0, 255, 200, 0.05); --border-color: rgba(0, 255, 200, 0.08);
+    --primary: #00e5b0; --primary2: #66f5d0; --text-primary: #e0fff5; --text-secondary: rgba(100, 240, 210, 0.35); --shadow: rgba(0, 220, 180, 0.08);
+}
+.theme-rose {
+    --bg-body: #1a080c; --bg-card: rgba(255, 50, 80, 0.06); --border-color: rgba(255, 50, 80, 0.10);
+    --primary: #ff4466; --primary2: #ff8899; --text-primary: #ffe6ea; --text-secondary: rgba(255, 150, 170, 0.35); --shadow: rgba(255, 50, 80, 0.10);
+}
+.theme-lavender {
+    --bg-body: #100a1a; --bg-card: rgba(180, 150, 255, 0.06); --border-color: rgba(180, 150, 255, 0.10);
+    --primary: #a88bff; --primary2: #cbb5ff; --text-primary: #f0ebff; --text-secondary: rgba(200, 180, 255, 0.35); --shadow: rgba(160, 130, 255, 0.10);
+}
+.theme-mint {
+    --bg-body: #0a1410; --bg-card: rgba(50, 255, 180, 0.05); --border-color: rgba(50, 255, 180, 0.08);
+    --primary: #33e0a8; --primary2: #77f0c8; --text-primary: #e0fff0; --text-secondary: rgba(100, 240, 200, 0.35); --shadow: rgba(50, 220, 160, 0.08);
+}
+.theme-sapphire {
+    --bg-body: #0a0a1a; --bg-card: rgba(50, 80, 255, 0.06); --border-color: rgba(50, 80, 255, 0.10);
+    --primary: #4466ff; --primary2: #7799ff; --text-primary: #e6ecff; --text-secondary: rgba(150, 180, 255, 0.35); --shadow: rgba(50, 80, 255, 0.10);
+}
+.theme-coral {
+    --bg-body: #1a0e08; --bg-card: rgba(255, 120, 80, 0.06); --border-color: rgba(255, 120, 80, 0.10);
+    --primary: #ff7755; --primary2: #ffaa88; --text-primary: #fff0e8; --text-secondary: rgba(255, 200, 170, 0.35); --shadow: rgba(255, 100, 60, 0.10);
+}
+.theme-nightpurple {
+    --bg-body: #080410; --bg-card: rgba(100, 60, 200, 0.08); --border-color: rgba(100, 60, 200, 0.10);
+    --primary: #8855dd; --primary2: #bb88ff; --text-primary: #f0e8ff; --text-secondary: rgba(180, 150, 255, 0.35); --shadow: rgba(80, 40, 180, 0.12);
+}
+.theme-freshblue {
+    --bg-body: #f0f5ff; --bg-card: #ffffff; --border-color: rgba(50, 100, 255, 0.10);
+    --primary: #4488ff; --primary2: #77aaff; --text-primary: #1a2a4a; --text-secondary: rgba(0, 0, 0, 0.35); --shadow: rgba(50, 100, 255, 0.06);
+}
+.theme-warmyellow {
+    --bg-body: #1a1408; --bg-card: rgba(255, 200, 50, 0.06); --border-color: rgba(255, 200, 50, 0.08);
+    --primary: #ffcc44; --primary2: #ffdd77; --text-primary: #fff8e0; --text-secondary: rgba(255, 220, 150, 0.35); --shadow: rgba(255, 200, 50, 0.08);
+}
+.theme-iceblue {
+    --bg-body: #e8f4ff; --bg-card: #ffffff; --border-color: rgba(100, 200, 255, 0.15);
+    --primary: #44bbff; --primary2: #88ddff; --text-primary: #0a1a2a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(50, 180, 255, 0.06);
+}
+.theme-gray {
+    --bg-body: #e8e8ec; --bg-card: #f5f5f8; --border-color: rgba(0, 0, 0, 0.05);
+    --primary: #666680; --primary2: #9999b0; --text-primary: #1a1a2e; --text-secondary: rgba(0, 0, 0, 0.35); --shadow: rgba(0, 0, 0, 0.04);
+}
+.theme-black {
+    --bg-body: #0a0a0a; --bg-card: #1a1a1a; --border-color: rgba(255, 255, 255, 0.04);
+    --primary: #888888; --primary2: #bbbbbb; --text-primary: #f0f0f0; --text-secondary: rgba(255, 255, 255, 0.25); --shadow: rgba(0, 0, 0, 0.6);
+}
+.theme-simpleblue {
+    --bg-body: #eef4ff; --bg-card: #ffffff; --border-color: rgba(50, 100, 200, 0.06);
+    --primary: #3b7bdd; --primary2: #7ba8e8; --text-primary: #0a1a3a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(50, 100, 200, 0.04);
+}
+.theme-simplegreen {
+    --bg-body: #eef7f0; --bg-card: #ffffff; --border-color: rgba(50, 180, 80, 0.06);
+    --primary: #38b86a; --primary2: #78d89a; --text-primary: #0a1a10; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(50, 180, 80, 0.04);
+}
+.theme-simplepink {
+    --bg-body: #fdf0f3; --bg-card: #ffffff; --border-color: rgba(200, 80, 120, 0.06);
+    --primary: #d46080; --primary2: #e890a8; --text-primary: #2a0a18; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(200, 80, 120, 0.04);
+}
+.theme-simplepurple {
+    --bg-body: #f4f0fd; --bg-card: #ffffff; --border-color: rgba(120, 80, 200, 0.06);
+    --primary: #8855cc; --primary2: #b088dd; --text-primary: #1a0a2a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(120, 80, 200, 0.04);
+}
+.theme-simpleorange {
+    --bg-body: #fdf5ee; --bg-card: #ffffff; --border-color: rgba(200, 120, 50, 0.06);
+    --primary: #d48844; --primary2: #e8aa78; --text-primary: #2a1a0a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(200, 120, 50, 0.04);
+}
+.theme-simplered {
+    --bg-body: #fdeeef; --bg-card: #ffffff; --border-color: rgba(200, 50, 50, 0.06);
+    --primary: #cc4444; --primary2: #e87878; --text-primary: #2a0a0a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(200, 50, 50, 0.04);
+}
+.theme-simplecyan {
+    --bg-body: #eef8f8; --bg-card: #ffffff; --border-color: rgba(50, 180, 180, 0.06);
+    --primary: #38b8b8; --primary2: #78d8d8; --text-primary: #0a1a1a; --text-secondary: rgba(0, 0, 0, 0.30); --shadow: rgba(50, 180, 180, 0.04);
+}
+.theme-deeppurple {
+    --bg-body: #06040e; --bg-card: rgba(60, 30, 120, 0.12); --border-color: rgba(100, 60, 200, 0.06);
+    --primary: #7744cc; --primary2: #aa77ee; --text-primary: #eee6ff; --text-secondary: rgba(180, 150, 255, 0.30); --shadow: rgba(60, 30, 120, 0.15);
+}
+.theme-darkblue {
+    --bg-body: #040810; --bg-card: rgba(20, 60, 140, 0.12); --border-color: rgba(40, 80, 200, 0.06);
+    --primary: #4466cc; --primary2: #7799ee; --text-primary: #e6ecff; --text-secondary: rgba(150, 180, 255, 0.30); --shadow: rgba(20, 60, 140, 0.15);
+}
+.theme-darkgreen {
+    --bg-body: #040a06; --bg-card: rgba(20, 100, 50, 0.12); --border-color: rgba(40, 180, 80, 0.06);
+    --primary: #38b060; --primary2: #70cc90; --text-primary: #e6f5ea; --text-secondary: rgba(150, 230, 180, 0.30); --shadow: rgba(20, 100, 50, 0.15);
+}
+.theme-darkred {
+    --bg-body: #0e0404; --bg-card: rgba(140, 20, 20, 0.12); --border-color: rgba(200, 40, 40, 0.06);
+    --primary: #cc4444; --primary2: #ee7777; --text-primary: #ffe6e6; --text-secondary: rgba(255, 150, 150, 0.30); --shadow: rgba(140, 20, 20, 0.15);
+}
+.theme-darkgold {
+    --bg-body: #0e0a04; --bg-card: rgba(140, 100, 20, 0.12); --border-color: rgba(200, 160, 40, 0.06);
+    --primary: #ccaa44; --primary2: #eecc77; --text-primary: #fff8e6; --text-secondary: rgba(255, 220, 150, 0.30); --shadow: rgba(140, 100, 20, 0.15);
+}
+.theme-darksilver {
+    --bg-body: #08080a; --bg-card: rgba(100, 100, 120, 0.08); --border-color: rgba(150, 150, 180, 0.04);
+    --primary: #8888aa; --primary2: #bbbbd0; --text-primary: #f0f0f5; --text-secondary: rgba(200, 200, 220, 0.30); --shadow: rgba(100, 100, 120, 0.10);
+}
+
+/* ============================================================
+   基础样式
+   ============================================================ */
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    background:var(--bg-body);
+    color:var(--text-primary);
+    min-height:100vh;
+    font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;
+    font-size:16px;
+    padding:20px;
+    transition:background .3s,color .3s;
+}
+
+.container{max-width:960px;margin:0 auto}
+
+/* ============================================================
+   头部
+   ============================================================ */
+
+.header{
+    text-align:center;
+    padding:24px 0 16px;
+    border-bottom:1px solid var(--border-color);
+    margin-bottom:20px;
+    transition:border-color .3s;
+}
+.header .icon{font-size:40px;display:block}
+.header h1{font-size:30px;font-weight:700;color:var(--text-primary)}
+.header .sub{color:var(--text-secondary);font-size:14px;margin-top:2px}
+.header .badge{
+    display:inline-block;
+    margin-top:6px;
+    background:rgba(251,191,36,.06);
+    border:1px solid rgba(251,191,36,.08);
+    color:rgba(251,191,36,.5);
+    font-size:10px;
+    padding:2px 14px;
+    border-radius:20px;
+}
+.header-actions{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:10px;
+    flex-wrap:wrap;
+}
+
+/* 按钮和语言下拉 */
+.theme-settings-btn{
+    background:var(--border-color);
+    border:none;
+    color:var(--text-secondary);
+    padding:4px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:12px;
+    transition:all .3s;
+}
+.theme-settings-btn:hover{color:var(--text-primary)}
+
+.lang-select{
+    background:var(--border-color);
+    border:none;
+    color:var(--text-secondary);
+    padding:4px 12px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:12px;
+}
+.lang-form { display: inline; }
+
+/* ============================================================
+   主题设置弹窗
+   ============================================================ */
+
+.settings-modal-hidden{display:none}
+
+#settingsModal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.6);
+    backdrop-filter:blur(6px);
+    z-index:99998;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+.settings-modal-body{
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:16px;
+    padding:24px 28px;
+    max-width:560px;
+    width:100%;
+    max-height:80vh;
+    overflow-y:auto;
+}
+.settings-modal-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:16px;
+}
+.settings-modal-header h3{color:var(--text-primary);font-size:18px;margin:0}
+.settings-close{
+    background:none;
+    border:none;
+    color:var(--text-secondary);
+    font-size:24px;
+    cursor:pointer;
+    padding:0 8px;
+}
+.settings-hint {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+/* 主题网格 */
+.theme-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    gap:8px;
+}
+.theme-form { display: block; }
+.theme-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    padding:8px 12px;
+    border-radius:8px;
+    border:2px solid transparent;
+    background:var(--bg-card);
+    cursor:pointer;
+    transition:all .2s;
+    text-align:left;
+}
+.theme-item:hover{border-color:var(--border-color)}
+.theme-item-active{border-color:var(--text-primary)}
+.theme-swatch{
+    display:inline-block;
+    width:28px;
+    height:28px;
+    border-radius:50%;
+    flex-shrink:0;
+    border:1px solid var(--border-color);
+}
+.theme-name{color:var(--text-primary);font-size:13px;flex:1}
+.theme-check{color:var(--primary);font-size:14px}
+
+.settings-modal-footer{
+    margin-top:14px;
+    padding-top:12px;
+    border-top:1px solid var(--border-color);
+    color:var(--text-secondary);
+    font-size:12px;
+    text-align:center;
+}
+.settings-modal-footer strong{color:var(--text-primary)}
+.settings-modal-count{
+    display:block;
+    font-size:10px;
+    color:var(--text-secondary);
+    opacity:.5;
+    margin-top:2px;
+}
+
+/* ============================================================
+   工具导航 tabs
+   ============================================================ */
+
+.tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px;
+    background:var(--bg-card);
+    border-radius:12px;
+    padding:6px;
+    border:1px solid var(--border-color);
+    margin-bottom:20px;
+    transition:all .3s;
+}
+.tabs a{
+    padding:8px 16px;
+    border-radius:8px;
+    color:var(--text-secondary);
+    text-decoration:none;
+    font-size:14px;
+    transition:all .3s;
+}
+.tabs a:hover{color:var(--text-primary);background:rgba(255,255,255,.04)}
+.tabs a.active{
+    background:linear-gradient(135deg,rgba(167,139,250,.12),rgba(236,72,153,.12));
+    color:var(--primary);
+}
+
+/* ============================================================
+   卡片（工具内容容器）
+   ============================================================ */
+
+.card{
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:16px;
+    padding:22px 24px;
+    transition:all .3s;
+}
+.card .tool-header{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.card .tool-header .icon{font-size:22px}
+.card .tool-header h2{color:var(--text-primary);font-size:21px}
+.card .desc{color:var(--text-secondary);font-size:14px;margin-bottom:14px}
+
+/* ============================================================
+   表单
+   ============================================================ */
+
+.field{margin-bottom:12px}
+.field label{
+    display:block;
+    color:var(--text-secondary);
+    font-size:14px;
+    margin-bottom:3px;
+}
+.field textarea,
+.field input,
+.field select{
+    width:100%;
+    padding:9px 12px;
+    background:rgba(255,255,255,.03);
+    border:1px solid var(--border-color);
+    border-radius:8px;
+    color:var(--text-primary);
+    font-size:16px;
+    font-family:'Monaco','Consolas',monospace;
+    transition:border-color .3s,background .3s,color .3s;
+}
+.field textarea:focus,
+.field input:focus,
+.field select:focus{outline:none;border-color:var(--primary)}
+.field textarea{min-height:100px;resize:vertical}
+.field .row{display:flex;gap:10px;flex-wrap:wrap}
+.field .row>*{flex:1;min-width:100px}
+
+/* 时间戳高亮 */
+.timestamp-current{color:var(--primary)}
+
+/* ============================================================
+   主按钮（渐变背景）
+   ============================================================ */
+
+.btn{
+    background:linear-gradient(135deg,var(--primary),var(--primary2));
+    border:none;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    padding:9px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:all .3s;
+}
+.btn:hover{opacity:.85;transform:translateY(-1px)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+
+/* ============================================================
+   结果展示框
+   ============================================================ */
+
+.result-box{
+    margin-top:14px;
+    background:rgba(0,0,0,.3);
+    border-radius:8px;
+    padding:12px 14px;
+    border:1px solid var(--border-color);
+    color:var(--text-primary);
+    font-family:'Monaco','Consolas',monospace;
+    font-size:15px;
+    white-space:pre-wrap;
+    word-break:break-all;
+    max-height:400px;
+    overflow-y:auto;
+    transition:all .3s;
+}
+.result-box .hash-item{
+    display:flex;
+    gap:12px;
+    padding:3px 0;
+    border-bottom:1px solid var(--border-color);
+}
+.result-box .hash-item .algo{color:var(--text-secondary);min-width:70px}
+.result-box .hash-item .val{color:var(--primary);word-break:break-all}
+
+/* 颜色预览行 */
+.color-result-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px;
+}
+.result-box .color-preview{
+    display:inline-block;
+    width:40px;
+    height:40px;
+    border-radius:8px;
+    border:1px solid var(--border-color);
+}
+
+/* 换算结果特殊处理 */
+.result-convert{font-size:20px;font-weight:600;color:var(--primary)}
+
+/* ============================================================
+   错误提示
+   ============================================================ */
+
+.error-msg{
+    background:rgba(248,113,113,.06);
+    border-left:3px solid #f87171;
+    padding:8px 12px;
+    border-radius:6px;
+    color:#fca5a5;
+    font-size:13px;
+    margin-top:10px;
+}
+
+/* ============================================================
+   复制按钮
+   ============================================================ */
+
+.copy-btn{
+    background:rgba(255,255,255,.04);
+    border:none;
+    color:var(--text-secondary);
+    padding:2px 12px;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:11px;
+    transition:all .2s;
+    margin-top:6px;
+}
+.copy-btn:hover{background:rgba(167,139,250,.1);color:var(--primary)}
+.copy-btn.copied{background:rgba(74,222,128,.1);color:#4ade80}
+
+/* ============================================================
+   页脚
+   ============================================================ */
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    color:var(--text-secondary);
+    font-size:12px;
+    line-height:1.8;
+    opacity:.8;
+    transition:color .3s;
+}
+
+/* ============================================================
+   底部免责声明条
+   改成和卡片一样的样式，不再突兀抢眼
+   ============================================================ */
+
+.disclaimer-note {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background: var(--bg-card); /* 统一跟随主题卡片背景 */
+    border: 1px solid var(--border-color); /* 统一边框 */
+    border-radius: 12px;
+    color: var(--text-secondary); /* 统一次要文字色 */
+    font-size: 12px;
+    line-height: 1.7;
+    opacity: 0.9; /* 稍微降低一点透明度，更低调 */
+}
+.disclaimer-note strong {
+    color: var(--text-primary); /* 标题用主文字色 */
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.disclaimer-note p {
+    margin: 0;
+    text-align: justify;
+}
+
+/* ============================================================
+   学习提示条（每个工具底部的黄条）
+   ============================================================ */
+
+.learn-more{
+    margin-top:12px;
+    padding:10px 14px;
+    background:rgba(251,191,36,.03);
+    border-radius:8px;
+    border:1px solid rgba(251,191,36,.05);
+    color:var(--text-secondary);
+    font-size:11px;
+    text-align:center;
+    opacity:.6;
+}
+
+/* ============================================================
+   Toast 底部浮动提示
+   ============================================================ */
+
+.toast{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    background:rgba(0,0,0,.85);
+    backdrop-filter:blur(10px);
+    color:#fff;
+    padding:10px 28px;
+    border-radius:10px;
+    font-size:15px;
+    border:1px solid rgba(255,255,255,.05);
+    opacity:0;
+    transition:opacity .3s;
+    pointer-events:none;
+    z-index:999;
+}
+.toast.show{opacity:1}
+
+/* ============================================================
+   响应式（手机端适配）
+   ============================================================ */
+
+@media (max-width:640px){
+    .container{padding:0}
+    .card{padding:14px}
+    .tabs a{font-size:11px;padding:5px 10px}
+    .field .row{flex-direction:column}
+    .result-box{font-size:12px;max-height:250px}
+    .settings-modal-body{padding:20px 18px}
+    .disclaimer-note{padding: 12px 16px;} /* 手机端稍微收紧内边距 */
+}
