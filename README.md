@@ -85,7 +85,7 @@
 
 ```bash
 # 1. 下载源码（任选其一）
-git clone https://github.com/[Your Name]/online-toolbox.git
+git clone https://github.com/Guan-Blip/online-toolbox.git
 # 或从 Releases 页面下载 zip 包并解压
 
 # 2. 将整个目录上传至虚拟主机的 Web 根目录
