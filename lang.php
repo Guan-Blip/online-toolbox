@@ -75,7 +75,7 @@ $text = [
     'json_desc'         => ['zh' => '格式化、验证、压缩 JSON 数据', 'en' => 'Format, validate, minify JSON', 'ja' => 'JSONの整形・検証・圧縮', 'ru' => 'Формат, проверка, сжатие JSON'],
     'json_input_label'  => ['zh' => '输入 JSON',        'en' => 'JSON input',           'ja' => 'JSON を入力',        'ru' => 'Введите JSON'],
     'json_btn'          => ['zh' => '🚀 格式化',        'en' => '🚀 Format',            'ja' => '🚀 整形',            'ru' => '🚀 Формат'],
-    'json_placeholder'  => ['zh' => '{"name":"工具箱","version":"3.3","tools":["JSON","时间戳","URL"]}', 'en' => '{"name":"toolbox","version":"3.3","tools":["JSON","Timestamp","URL"]}', 'ja' => '{"name":"ツールボックス","version":"3.3","tools":["JSON","タイムスタンプ","URL"]}', 'ru' => '{"name":"toolbox","version":"3.3","tools":["JSON","Время","URL"]}'],
+    'json_placeholder'  => ['zh' => '{"name":"工具箱","version":"1.0","tools":["JSON","时间戳","URL"]}', 'en' => '{"name":"toolbox","version":"1.0","tools":["JSON","Timestamp","URL"]}', 'ja' => '{"name":"ツールボックス","version":"1.0","tools":["JSON","タイムスタンプ","URL"]}', 'ru' => '{"name":"toolbox","version":"1.0","tools":["JSON","Время","URL"]}'],
 
     // 时间戳
     'timestamp_title'       => ['zh' => '时间戳转换',       'en' => 'Timestamp Converter',   'ja' => 'タイムスタンプ変換',    'ru' => 'Конвертер времени'],
@@ -197,7 +197,7 @@ $text = [
     'footer_learn_more' => ['zh' => '⚠️ 仅供学习参考 · 所有工具均在本地运行 · 数据不上云', 'en' => '⚠️ For learning only · All tools run locally · No upload', 'ja' => '⚠️ 学習用のみ · すべてローカル実行 · アップロードなし', 'ru' => '⚠️ Только для обучения · Всё работает локально · Без загрузки'],
     'footer_copyright'  => ['zh' => '数据不上云 · 纯本地运行', 'en' => 'No cloud · 100% local', 'ja' => 'クラウド不使用 · 完全ローカル', 'ru' => 'Без облака · Полностью локально'],
     'footer_based_on'   => ['zh' => 'highlight.js (BSD-3-Clause) · 本项目 MIT', 'en' => 'highlight.js (BSD-3-Clause) · This project MIT', 'ja' => 'highlight.js (BSD-3-Clause) · 本プロジェクト MIT', 'ru' => 'highlight.js (BSD-3-Clause) · Проект MIT'],
-    'footer_version_fmt'=> ['zh' => '🧰 在线工具箱 v3.3 · %d 种主题 · %d 个工具', 'en' => '🧰 Online Toolbox v3.3 · %d themes · %d tools', 'ja' => '🧰 オンラインツールボックス v3.3 · %dテーマ · %dツール', 'ru' => '🧰 Онлайн-инструменты v3.3 · %d тем · %d инструментов'],
+    'footer_version_fmt'=> ['zh' => '🧰 在线工具箱 v1.0 · %d 种主题 · %d 个工具', 'en' => '🧰 Online Toolbox v1.0 · %d themes · %d tools', 'ja' => '🧰 オンラインツールボックス v1.0 · %dテーマ · %dツール', 'ru' => '🧰 Онлайн-инструменты v1.0 · %d тем · %d инструментов'],
 ];
 
 function t($key) {
