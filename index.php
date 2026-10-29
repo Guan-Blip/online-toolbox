@@ -1,9 +1,8 @@
 <?php
 /**
  * 在线工具箱 · 主入口
- * v1.0 · 纯本地运行
+ * v1.0.2 · 纯本地运行
  */
-
 // 辅助函数：keepOnly 保留白名单键
 if (!function_exists('keepOnly')) {
     function keepOnly($data, $keys) {
