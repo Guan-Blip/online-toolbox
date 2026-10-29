@@ -204,15 +204,41 @@ body{
 }
 .theme-settings-btn:hover{color:var(--text-primary)}
 
-.lang-select{
-    background:var(--border-color);
-    border:none;
-    color:var(--text-secondary);
-    padding:4px 12px;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:12px;
+/* 新增：将 Language 和 select 融合在一个胶囊里 */
+.lang-group {
+    display: inline-flex;
+    align-items: center;
+    background: var(--border-color);
+    border-radius: 6px;
+    padding: 2px 4px 2px 10px;
+    transition: all .3s;
 }
+
+.lang-label {
+    color: var(--text-secondary);
+    font-size: 12px;
+    margin-right: 2px;
+    user-select: none;
+}
+
+.lang-select{
+    background: transparent; /* 去背景 */
+    border: none;            /* 去边框 */
+    color: var(--text-secondary);
+    padding: 2px 4px;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;           /* 去点击蓝框 */
+    transition: color .3s;
+}
+.lang-select:hover {
+    color: var(--text-primary);
+}
+.lang-select option {
+    background: var(--bg-body);
+    color: var(--text-primary);
+}
+
 .lang-form { display: inline; }
 
 /* ============================================================
