@@ -520,15 +520,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </button>
             <?php endif; ?>
 
-            <?php if ($config['enable_lang_switch'] == 1): ?>
+           <?php if ($config['enable_lang_switch'] == 1): ?>
             <!-- 去掉了 onchange，改由底部 JS 监听，以符合 CSP 规范 -->
-            <select name="lang_select" id="langSelect" class="lang-select">
+            <div class="lang-group">
+                <span class="lang-label">Language:</span>
+                <select name="lang_select" id="langSelect" class="lang-select">
                 <?php foreach ($langs as $code => $name): ?>
                 <option value="<?php echo h($code); ?>" <?php echo $current_lang === $code ? 'selected' : ''; ?>>
                     <?php echo h($name); ?>
                 </option>
                 <?php endforeach; ?>
             </select>
+            </div>
             <?php endif; ?>
         </div>
     </div>
